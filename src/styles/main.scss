@@ -4,10 +4,14 @@
 @import 'globals';
 @import '../_App.scss';
 
+// example Components
+// @import '../components/Header/_Header.scss';
+@import '../componentsExamples/ABasicComp/_ABasicComp.scss';
+@import '../componentsExamples/ABasicStatelessComp/_ABasicStatelessComp.scss';
+@import '../componentsExamples/generic/Input/_Input.scss';
+
 // Components
 // @import '../components/Header/_Header.scss';
-@import '../components/ABasicComp/_ABasicComp.scss';
-@import '../components/ABasicStatelessComp/_ABasicStatelessComp.scss';
 
 // Views
 // @import '../views/AView01/_AView01.scss';

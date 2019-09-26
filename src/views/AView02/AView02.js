@@ -1,5 +1,5 @@
 import React from 'react';
-import ATestRouting from '../../components/ATestRouting/ATestRouting';
+import ATestRouting from '../../componentsExamples/ATestRouting/ATestRouting';
 
 function AView02 (props) {
   return (

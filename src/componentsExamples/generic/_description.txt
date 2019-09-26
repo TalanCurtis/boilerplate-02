@@ -1,0 +1,3 @@
+a generic comp is one that would have a wrapper comp that passes in values and functions.
+- the do not subscribe to redux
+- the are made very basic take input and return values.

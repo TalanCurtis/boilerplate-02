@@ -1,0 +1,6 @@
+wrappers are components that wrap up generic comps and pass in the values and functions
+- should be located with the comp that uses it.
+-
+
+benefit:
+- can have generic comps that each have unique functionality passed in.
