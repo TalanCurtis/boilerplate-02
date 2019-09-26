@@ -3,10 +3,13 @@ import { Route, Switch } from 'react-router-dom';
 // import views
 import AView01 from './views/AView01/AView01';
 import AView02 from './views/AView02/AView02';
+import Form from './views/Form/Form';
 
 export default (
     <Switch>
-        <Route exact path='/' component={AView01} />
+        <Route exact path='/' component={Form} />
+        <Route path='/Form' component={Form} />
         <Route path='/AView02' component={AView02} />
+        <Route path='/AView01' component={AView01} />
     </Switch>
 )
