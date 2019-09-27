@@ -1,22 +1,33 @@
 body {
   font-size: 14px;
+  font-family: $ff1;
 }
 
-
 // TODO: add button hover and focus styles.
+
 input {
+  height: 30px;
+  font-size: $f2;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2pt $default; 
+  border: none;
+  text-align: center;
+  &[type=number]::-webkit-inner-spin-button{
+    // this hides number arrows
+    -webkit-appearance: none;
+  }
   &:hover {
     // TODO: Hover Border Color Variable
-    box-shadow: inset 0 0 0 2pt rgb(115, 114, 209); 
+    box-shadow: inset 0 0 0 2pt $hover; 
     // TODO: Focus BG Color Variable
-    background-color: rgb(231, 199, 199); 
+    background-color: none; 
   }
   &:focus {
     outline: none;
     // TODO: Focus Border Color Variable
-    box-shadow: inset 0 0 0 2pt rgb(65, 62, 228);
+    box-shadow: inset 0 0 0 2pt $active;
     // TODO: Focus BG Color Variable
-    background-color: rgb(182, 182, 182); 
+    background-color: none; 
   }
 }
 
@@ -30,31 +41,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-// Headers
-.h1 {
-  font-size: 4rem;
-}
-
-.h2 {
-  font-size: 3rem;
-}
-
-.h3 {
-  font-size: 2.5rem;
-}
-
-.h4 {
-  font-size: 2rem;
-}
-
-.h5 {
-  font-size: 1.5rem;
-}
-
-.h6 {
-  font-size: 1.2rem;
 }
 
 

@@ -1,0 +1,19 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-begin{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+// you can pass in variable to make mixins flexible.
+@mixin grid-columns($columns){
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  justify-items: center;
+  align-items: center;
+}

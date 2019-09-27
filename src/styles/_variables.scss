@@ -1,26 +1,58 @@
 // Colors
-// $darkPurple: #140328;
+$black: rgb(32, 32, 32);
+$white: rgb(255, 255, 255);
 
-$success: #73ABA5;
 $main1: #F7E6EA;
 $main2: #B8ABAE;
 $main3: #918789;
 $main4: #6B6465;
-$black: rgb(32, 32, 32);
-$white: rgb(255, 255, 255);
+$main5: rgb(66, 63, 64);
+
+$hover:rgb(158, 164, 165);
+$default:rgb(201, 201, 201);
+$disabled:rgb(97, 97, 97);
+$active:rgb(0, 154, 192);
+
 $warning: rgb(182, 0, 0);
+$success: #73ABA5;
 $test1: rgb(255, 0, 212);
 
+// Google Fonts find two fonts that work together then make variables for them to be used.
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow );
 
+// Font family
+$ff1: 'PT Sans', sans-serif;
+$ff2: 'PT Sans Narrow', sans-serif;
+
+// Font Sizes
+$fsmall: 0.8rem;
+$f1: 1.2rem;
+$f2: 1.5rem;
+$f3: 2rem;
+$f4: 2.5rem;
+$f5: 3rem;
+$f6: 4rem;
+
+// spacing
+$s1: 2px;
+$s2: 4px;
+$s3: 8px;
 
 :export {
-  success: $success;
+  //colors
   main1: $main1;
   main2:$main2;
   main3: $main3;
   main4:$main4;
+  main5:$main5;
+  default:$default;
+  default:$default;
+  disabled:$disabled;
+  hover:$hover;
+  active:$active;
   black: $black;
   white: $white;
   warning: $warning;
+  success: $success;
   test1: $test1;
 }

@@ -9,7 +9,7 @@ export default (
     <Switch>
         <Route exact path='/' component={Form} />
         <Route path='/Form' component={Form} />
-        <Route path='/AView02' component={AView02} />
-        <Route path='/AView01' component={AView01} />
+        <Route path='/2' component={AView02} />
+        <Route path='/1' component={AView01} />
     </Switch>
 )

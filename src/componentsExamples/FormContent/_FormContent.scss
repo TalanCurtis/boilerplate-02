@@ -1,0 +1,5 @@
+.FormContent {
+  .boxes{
+    @include grid-columns(3);
+  }
+}
