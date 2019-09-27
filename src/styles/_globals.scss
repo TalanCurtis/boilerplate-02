@@ -4,7 +4,7 @@ body {
 }
 
 // TODO: add button hover and focus styles.
-
+// specific input
 input {
   height: 30px;
   font-size: $f2;
@@ -17,17 +17,21 @@ input {
     -webkit-appearance: none;
   }
   &:hover {
-    // TODO: Hover Border Color Variable
     box-shadow: inset 0 0 0 2pt $hover; 
-    // TODO: Focus BG Color Variable
     background-color: none; 
   }
   &:focus {
     outline: none;
-    // TODO: Focus Border Color Variable
     box-shadow: inset 0 0 0 2pt $active;
-    // TODO: Focus BG Color Variable
     background-color: none; 
+  }
+}
+// inputs class target component style that has label and other props
+.inputs {
+  .label{
+    margin-left: $s3;
+    margin-bottom: $s1;
+    font-size: $f1;
   }
 }
 
