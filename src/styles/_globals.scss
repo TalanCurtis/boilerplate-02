@@ -13,8 +13,8 @@ input {
   border: none;
   text-align: center;
   &[type=number]::-webkit-inner-spin-button{
-    // this hides number arrows
-    -webkit-appearance: none;
+    // targets the arrows in the number input
+    // -webkit-appearance: none;
   }
   &:hover {
     box-shadow: inset 0 0 0 2pt $hover; 

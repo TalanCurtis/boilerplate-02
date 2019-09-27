@@ -8,10 +8,12 @@ import {
 // Initial State
 const initialState = {
   text:"",
-  quantity:0,
-  phoneNumber:0,
+  quantity:"",
+  phoneNumber:"",
   email:"",
-  date:""
+  date:"",
+  age:"",
+  name:""
 }
 
 // Reducer

@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/main.css';
 import { BrowserRouter } from 'react-router-dom';
 import routes from './routes';
+import { connect } from 'react-redux';
 
 function App() {
   return (
@@ -15,4 +16,8 @@ function App() {
   );
 }
 
-export default App;
+function mapStateToProps(state){
+  return state;
+}
+
+export default connect(mapStateToProps)(App);
