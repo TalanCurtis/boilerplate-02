@@ -2,6 +2,7 @@ import React from 'react';
 import Age from './wrappers/Age';
 import Name from './wrappers/Name';
 import Email from './wrappers/Email';
+import Submit from './wrappers/Submit';
 
 function Inputs (props) {
   return (
@@ -10,6 +11,7 @@ function Inputs (props) {
       <Age />
       <Name />
       <Email />
+      <Submit />
     </div>
   )
 }

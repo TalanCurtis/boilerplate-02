@@ -10,6 +10,7 @@ InputEmail.propTypes = {
   value: PropTypes.any,
   placeholder: PropTypes.oneOfType([PropTypes.string , PropTypes.number]),
   handleOnChange: PropTypes.func,
+  errors: PropTypes.array
 };
 
 InputEmail.defaultProps = {
@@ -17,17 +18,24 @@ InputEmail.defaultProps = {
   valueKey: "defaultValueKey",
   value: "defaultValue",
   placeholder:"defaultPlaceholder",
-  handleOnChange: _noop
+  handleOnChange: _noop,
+  errors:["defaultError1", "defaultError2"]
 };
 //-- Default Props and PropTypes End --//
 
 function InputEmail (props) {
+  let errors = props.errors.map( ( error, i )=>{
+    return(
+      <div className="error" key={i}>{ error }</div>
+    );
+  });
   return(
     <div className="InputEmail inputs">
       <div className="label"> 
         { props.label }
       </div>
       <input type="email"  placeholder={props.placeholder} data-key={props.valueKey}  value={props.value} onChange={(e)=>props.handleOnChange(e)}/>
+      {errors}
     </div>
   )
 }

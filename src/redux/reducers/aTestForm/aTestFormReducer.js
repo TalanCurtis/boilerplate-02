@@ -7,13 +7,14 @@ import {
 
 // Initial State
 const initialState = {
-  text:"",
-  quantity:"",
-  phoneNumber:"",
   email:"",
-  date:"",
   age:"",
-  name:""
+  name:"",
+  errors:{
+    age:[],
+    name:[],
+    email:[]
+  }
 }
 
 // Reducer
